@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="uk">
 <head>
@@ -17,11 +15,17 @@
       width: 50%;
       padding: 10px;
       font-size: 18px;
-      border: none;
+      border: 2px solid transparent; /* початкова рамка */
       border-radius: 8px;
       background-color: #3c3836; /* темно-коричневий */
       color: #ebdbb2;
       caret-color: #fe8019; /* яскравий оранжевий курсор */
+      outline: none; /* прибираємо стандартне синє виділення */
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    input[type="text"]:focus {
+      border-color: #fe8019; /* оранжева рамка */
+      box-shadow: 0 0 8px #fe8019; /* легка помаранчева тінь */
     }
     a {
       color: #fabd2f; /* золотистий */
@@ -47,4 +51,3 @@
   </p>
 </body>
 </html>
-
